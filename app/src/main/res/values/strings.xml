@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Online Shopping</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="titl_slide1">20% Discount\nNew Arrival Product</string>
+    <string name="titl_slide2">Take Advantage \n of The Offer Shopping</string>
+    <string name="titl_slide3">All Types Offers \n Wthin Your Reach</string>
+    <string name="des_slideshow">Publish Up your sellies to make yourself \n more beautiful with this app</string>
+    <string name="categories">Categories</string>
+</resources>

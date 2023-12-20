@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activities.choce_payment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Pay_BackPaypal"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/arrow_back" />
+
+                <TextView
+                    android:id="@+id/typeofpayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="23sp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Checkout" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Name of PayPal" />
+
+            <EditText
+                android:id="@+id/Pay_Namepaypal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_box"
+                android:ems="10"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:hint="Enter Your PayPal Name "
+                android:inputType="text"
+                android:layout_marginTop="8dp"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="PayPal Email " />
+
+            <EditText
+                android:id="@+id/Pay_Emailpaypal"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_box"
+                android:ems="10"
+                android:hint="Enter your email address"
+                android:textColorHint="#808080"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:padding="12dp" />
+
+            <!-- New grid of two TextView elements horizontally aligned -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/firstTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Payment:"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/totalPricepaypal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="$50000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Pay_confirmpaypal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_text_box"
+                    android:text="Confirm"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/black"
+                    app:drawableRightCompat="@drawable/arrow"
+                    app:toggleCheckedStateOnClick="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

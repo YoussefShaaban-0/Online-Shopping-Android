@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".others.InsertNewCatagory"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Edit catagory"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/catagoryonedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:hint=" catagory "
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/white"
+            android:textSize="30dp">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/updatecatagory"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_button"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:text="update catagory"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:cornerRadius="8dp" />
+    <Button
+        android:id="@+id/deletcatagory"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_button_red"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:text="delet"
+        app:backgroundTint="@null"
+        app:cornerRadius="8dp" />
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

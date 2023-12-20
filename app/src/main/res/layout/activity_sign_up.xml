@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".activities.Sign_UP">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="13dp"
+            android:text="Sign Up"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
+            android:text="Create an new account"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="10dp"
+            android:text="User name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:hint="Enter your username"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextUsername"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="4dp"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="6dp"
+            android:text="Password"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView5"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="4dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="2dp"
+            android:text=" Confirm Password"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/editTextconfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:hint="Confirm your password"
+            android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextconfirmPassword"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="2dp"
+            android:text="ssn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/ssn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView7"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:hint="Confirm your ssn"
+
+            android:inputType="number" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ssn"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="2dp"
+            android:text="phone"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView8"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:hint="Enter your phone"
+
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="2dp"
+            android:text="gndre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/gndre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView9"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:hint="enter your gendre"
+
+            android:inputType="text" />
+
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gndre"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="6dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#666666"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+            <!-- Left Side -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="5dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/O_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email of user:"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:id="@+id/O_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Item name:"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:id="@+id/O_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Item Number:"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:id="@+id/O_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Item Date:"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!-- Right Side -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <!-- Add a delete button, you can replace the icon with your own -->
+                <ImageView
+                        android:id="@+id/btnDelete"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/delete_foreground" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

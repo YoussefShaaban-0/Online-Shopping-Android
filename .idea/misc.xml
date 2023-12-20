@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Charts/app/src/main/res/drawable-v24/text_view_layout.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/activity_all_catagory_selected.xml" value="0.16032608695652173" />
+        <entry key="..\:/Charts/app/src/main/res/layout/activity_catagories_name.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/activity_chart.xml" value="0.16032608695652173" />
+        <entry key="..\:/Charts/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/Charts/app/src/main/res/layout/activity_mange_all_products.xml" value="0.33" />
+        <entry key="..\:/Charts/app/src/main/res/layout/activity_mypersonal_deteils.xml" value="0.16032608695652173" />
+        <entry key="..\:/Charts/app/src/main/res/layout/activity_password_reset.xml" value="0.67" />
+        <entry key="..\:/Charts/app/src/main/res/layout/activity_product_for_admin.xml" value="0.16032608695652173" />
+        <entry key="..\:/Charts/app/src/main/res/layout/all_ordes.xml" value="0.33" />
+        <entry key="..\:/Charts/app/src/main/res/layout/cardofproduct.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/cart_item.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/cart_page.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/catagorescell.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/chechout_paypal_page.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/checkout_criditcartpage.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/comment.xml" value="0.16032608695652173" />
+        <entry key="..\:/Charts/app/src/main/res/layout/commentlist.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/modify_user_dialog.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/layout/report_item.xml" value="0.1" />
+        <entry key="..\:/Charts/app/src/main/res/menu/menuforbottombar.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

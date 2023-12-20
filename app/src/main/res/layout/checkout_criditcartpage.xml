@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/background_light"
+        tools:context=".activities.choce_payment">
+
+    <!-- CardView with improved styling -->
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+        <!-- Main content container -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+            <!-- Header with back button and payment type -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageButton
+                        android:id="@+id/Pay_Back"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/white"
+                        app:srcCompat="@drawable/arrow_back" />
+
+                <TextView
+                        android:id="@+id/typeofpayment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Checkout"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Credit Card Number -->
+            <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Credit Card Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            <!-- EditText for credit card number -->
+            <EditText
+                    android:id="@+id/Pay_Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_box"
+                    android:ems="10"
+                    android:hint="XXXX  XXXX  XXXX  XXXX"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#808080" />
+
+            <!-- Cardholder's Name -->
+            <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Cardholder's Name as on the Card"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            <!-- EditText for cardholder's name -->
+            <EditText
+                    android:id="@+id/Pay_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_box"
+                    android:ems="10"
+                    android:hint="e.g. Mohamed Elsarkawey"
+                    android:inputType="textEmailSubject"
+                    android:padding="12dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#808080" />
+
+            <!-- Expiry Date and CVV -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                <!-- Expiry Date -->
+                <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Expiry Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                <!-- CVV -->
+                <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="CVV"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- EditTexts for Expiry Date and CVV -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/Pay_expiryM"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_box"
+                        android:gravity="center"
+                        android:hint="MM"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="#808080" />
+
+                <EditText
+                        android:id="@+id/Pay_expiryY"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/edit_text_box"
+                        android:gravity="center"
+                        android:hint="YY"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="#808080" />
+
+                <EditText
+                        android:id="@+id/Pay_CVV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_box"
+                        android:gravity="center"
+                        android:hint="xxx"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="#808080" />
+            </LinearLayout>
+
+            <!-- Total Payment -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/firstTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:text="Total Payment:"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                <TextView
+                        android:id="@+id/totalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="$50000"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Confirm Button -->
+            <Button
+                    android:id="@+id/Pay_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_text_box"
+                    app:backgroundTint="@color/black"
+                    app:drawableRightCompat="@drawable/arrow"
+                    android:text="Confirm"
+                    android:enabled="true"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+            />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

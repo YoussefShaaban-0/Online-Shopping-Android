@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/admnemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/admnUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/admnPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/admnConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:hint="Confirm Password"/>
+    <EditText
+        android:id="@+id/admnssn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:hint="SSN"/>
+    <EditText
+        android:id="@+id/admnphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:hint="Phone number"/>
+
+    <TextView
+            android:id="@+id/admnbirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gndre"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Set Your Birthday"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    <EditText
+        android:id="@+id/admngndre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:hint="Gendre"/>
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="20dp"
+        android:text="insert as admin"
+
+        />
+    <Button
+        android:id="@+id/manage_user"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="20dp"
+        android:text="manage User"
+
+        />
+
+</LinearLayout>

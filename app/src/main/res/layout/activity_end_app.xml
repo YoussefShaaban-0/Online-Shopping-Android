@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.End_app">
+    <Button
+        android:id="@+id/personal_deteils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="6dp"
+        android:text="My Personal Details"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_deteils"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:text="setting"
+        android:textColor="#FFFFFF"
+
+        />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:text="logout"
+        android:textColor="#FFFFFF"
+
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/search_buutom"
+        app:backgroundTint="@null"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menuforbottombar">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>
